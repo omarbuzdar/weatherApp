@@ -1,5 +1,5 @@
 {
-  "name": "weather-react",
+  "name": "weatherApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
