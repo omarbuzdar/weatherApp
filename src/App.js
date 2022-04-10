@@ -41,7 +41,7 @@ function App() {
     let months = ["January","February","March","April","May","June","July",
     "August","September","October","November","December"];
   
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    // let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     let day = days[d.getDay()];
     let date = d.getDate();
@@ -65,11 +65,11 @@ function App() {
         {(typeof weather.current != "undefined") ? (
         <div>
           <div className='location-box'>
-            <div className='location'>{location[0].name}, {location[0].country}</div>
+            <div className='location'>{location[0].name}</div>
             <div className='date'>{dateBuilder(new Date())}</div>
           </div>
           <div className='weather-box'>
-            <div className='temp'>{Math.round((weather.current.temp -273.15)*9/5 + 32)}°F</div>
+            <div className='temp'>{Math.round((weather.current.temp -273.15)*9/5 + 32)}°</div>
             <div className='weather'>{weather.current.name}</div>
           </div>
           <div className = 'hourly-bar'>
